@@ -13,6 +13,3 @@ This is a gag site meant to rickroll people :) it goes hand-in-hand with [secret
 > **2b2s.badfirmware.com**  
 This is an acarchy survival minecraft server, 2 bored 2 school. Connect to it with the above ip.  
 
-
-> **kutcraft.badfirmware.com**  
-This is kutmandur's Towny SMP sever, KutCraft. Connect to it with the above ip.  
