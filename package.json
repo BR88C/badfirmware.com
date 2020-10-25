@@ -34,6 +34,7 @@
     "mouse-change": "^1.4.0",
     "regl": "^2.0.1",
     "regl-camera": "^2.1.1",
-    "resl": "^1.0.3"
+    "resl": "^1.0.3",
+    "vectorize-text": "^3.2.1"
   }
 }
