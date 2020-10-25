@@ -14,18 +14,16 @@ module.exports = {
       return new Promise(poll);
     }
   
-    async function generateText () {
-      let waitingText = new Text(regl)
-      waitingText.update({
-        position: [100, 100],
-        text: 'Click to play music',
-        font: '30px Impact, sans-serif',
-        color: '#A9A9A9'
-      })
-      await waitingText.render()
-    }
+    let waitingText = new Text(regl)
+    waitingText.update({
+      position: [100, 100],
+      text: 'Click to play music',
+      font: '30px Impact, sans-serif',
+      color: '#A9A9A9'
+    })
+    waitingText.render()
+    
 
-    generateText();
     waitFor(_ => mouse.buttons).then(_ => {
 
     const N = 128
