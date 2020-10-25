@@ -1,9 +1,33 @@
 const regl = require('regl')({pixelRatio: 1})
 const perspective = require('gl-mat4/perspective')
 const lookAt = require('gl-mat4/lookAt')
+const Text = require('gl-text')
+const mouse = require('mouse-change')()
 
 module.exports = {
   execute () {
+    function waitFor(conditionFunction) {
+      const poll = resolve => {
+        if(conditionFunction()) resolve();
+        else setTimeout(_ => poll(resolve), 25);
+      }
+      return new Promise(poll);
+    }
+  
+    async function generateText () {
+      let waitingText = new Text(regl)
+      waitingText.update({
+        position: [100, 100],
+        text: 'Click to play music',
+        font: '30px Impact, sans-serif',
+        color: '#A9A9A9'
+      })
+      await waitingText.render()
+    }
+
+    generateText();
+    waitFor(_ => mouse.buttons).then(_ => {
+
     const N = 128
 
     require('resl')({
@@ -175,8 +199,10 @@ module.exports = {
 
           // Render terrain
           drawTerrain()
+
         })
       }
     })
+  })
   }
 }
