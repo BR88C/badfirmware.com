@@ -6,7 +6,7 @@ A website built utiizing regl for it's primary functionality that will display a
 
 To test your code, install your node modules by running the following in the same directory as index.js:
 ```
-npm i
+npm install
 ```
 If it ins't installing dev dependences, check your npm config:
 ```
@@ -21,5 +21,5 @@ npm start
 
 To build an html, run the following in the same directory as index.js:
 ```
-npm build
+npm run-script build
 ```
