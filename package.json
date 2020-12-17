@@ -22,10 +22,11 @@
     "budo": "^11.6.4",
     "es2040": "^1.2.6",
     "indexhtmlify": "^2.0.1",
-    "uglify-js": "^3.11.3"
+    "uglify-js": "^3.12.2"
   },
   "dependencies": {
     "angle-normals": "^1.0.0",
+    "bl": "^4.0.3",
     "browserify-fs": "^1.0.0",
     "bunny": "^1.0.1",
     "getusermedia": "^2.0.1",
@@ -37,6 +38,7 @@
     "regl": "^2.0.1",
     "regl-camera": "^2.1.1",
     "resl": "^1.0.3",
+    "semver": "^7.3.4",
     "vectorize-text": "^3.2.1"
   }
 }
