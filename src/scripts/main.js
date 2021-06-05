@@ -1,4 +1,5 @@
 import * as THREE from '/libs/three.module.js';
+import { BufferGeometryUtils } from '/libs/BufferGeometryUtils.js';
 import { OrbitControls } from '/libs/OrbitControls.js';
 
 let renderer, scene, camera, controls;
